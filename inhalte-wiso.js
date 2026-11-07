@@ -25,7 +25,7 @@
     { id: 'k-wiso-15', bereich: 'wiso', frage: 'Vom Brutto- zum Nettolohn', antwort: 'Bruttolohn minus Steuern (Lohnsteuer, ggf. Kirchensteuer und Solidaritätszuschlag) minus Arbeitnehmeranteile zur Sozialversicherung (Kranken-, Pflege-, Renten-, Arbeitslosenversicherung) = Nettolohn. Die genauen Beitragssätze ändern sich regelmäßig.' },
     { id: 'k-wiso-16', bereich: 'wiso', frage: 'Rechtsformen: e.K., GbR, GmbH', antwort: 'e.K. (eingetragener Kaufmann): ein Inhaber, haftet unbeschränkt auch mit Privatvermögen. GbR: mind. 2 Gesellschafter, die persönlich und unbeschränkt haften. GmbH: juristische Person, Stammkapital mind. 25.000 €, Haftung auf das Gesellschaftsvermögen beschränkt, geführt von Geschäftsführer(n).' },
     { id: 'k-wiso-17', bereich: 'wiso', frage: 'Handwerk, Industrie und Kammern', antwort: 'Straßenbauer ist ein zulassungspflichtiges Handwerk (Anlage A der Handwerksordnung). Handwerksbetriebe sind Pflichtmitglied der Handwerkskammer (HWK) und in der Handwerksrolle eingetragen; die Mitgliedschaft in der Innung ist freiwillig. Industriebetriebe (z. B. große Bauunternehmen) gehören zur Industrie- und Handelskammer (IHK). Kammern überwachen u. a. die Ausbildung und führen Prüfungen durch.' },
-    { id: 'k-wiso-18', bereich: 'wiso', frage: 'Umweltschutz und Nachhaltigkeit im Betrieb', antwort: 'Abfallhierarchie (Kreislaufwirtschaftsgesetz): Vermeiden → Wiederverwenden → Recyceln → sonstige Verwertung (z. B. energetisch) → Beseitigen. Auf der Baustelle: Abfälle getrennt sammeln, Ausbauasphalt wiederverwerten, teer-/pechhaltige Stoffe gesondert behandeln, Gefahrstoffe sicher lagern, Boden und Gewässer schützen. Nachhaltigkeit hat drei Säulen: ökologisch, ökonomisch, sozial.' },
+    { id: 'k-wiso-18', bereich: 'wiso', frage: 'Umweltschutz und Nachhaltigkeit im Betrieb', antwort: 'Abfallhierarchie (Kreislaufwirtschaftsgesetz): Vermeiden → Vorbereiten zur Wiederverwendung → Recyceln → sonstige Verwertung (z. B. energetisch) → Beseitigen. Auf der Baustelle: Abfälle getrennt sammeln, Ausbauasphalt wiederverwerten, teer-/pechhaltige Stoffe gesondert behandeln, Gefahrstoffe sicher lagern, Boden und Gewässer schützen. Nachhaltigkeit hat drei Säulen: ökologisch, ökonomisch, sozial.' },
     { id: 'k-wiso-19', bereich: 'wiso', frage: 'Soziale Marktwirtschaft', antwort: 'Wirtschaftsordnung der Bundesrepublik (geprägt von Ludwig Erhard und Alfred Müller-Armack): Preise bilden sich über Angebot und Nachfrage im freien Wettbewerb, der Staat setzt Regeln und sorgt für sozialen Ausgleich – z. B. Wettbewerbsschutz (Bundeskartellamt), Sozialversicherung, Arbeitnehmerschutzgesetze, Tarifautonomie.' }
   );
 
@@ -146,7 +146,7 @@
 
     { id: 'f-wiso-20', bereich: 'wiso', stufe: 2, typ: 'mc',
       frage: 'Welche Reihenfolge entspricht der Abfallhierarchie des Kreislaufwirtschaftsgesetzes?',
-      optionen: ['Beseitigen – Recyceln – Vermeiden', 'Recyceln – Vermeiden – Beseitigen', 'Verbrennen – Vermeiden – Recyceln', 'Vermeiden – Wiederverwenden – Recyceln – sonstige Verwertung – Beseitigen'],
+      optionen: ['Beseitigen – Recyceln – Vermeiden', 'Recyceln – Vermeiden – Beseitigen', 'Verbrennen – Vermeiden – Recyceln', 'Vermeiden – Vorbereiten zur Wiederverwendung – Recyceln – sonstige Verwertung – Beseitigen'],
       richtig: 3,
       erklaerung: 'Vorrang hat immer die Vermeidung von Abfall, Beseitigung (z. B. Deponie) ist die letzte Möglichkeit. Im Straßenbau wird z. B. Ausbauasphalt wiederverwertet.' },
 
@@ -158,12 +158,12 @@
 
     { id: 'f-wiso-22', bereich: 'wiso', stufe: 1, typ: 'text',
       frage: 'Wie heißt die Gewerkschaft, die die Beschäftigten im Bauhauptgewerbe vertritt? (Abkürzung)',
-      antworten: ['IG BAU', 'IG Bau', 'IGBAU', 'IG Bauen-Agrar-Umwelt', 'Industriegewerkschaft Bauen-Agrar-Umwelt'],
+      antworten: ['IG BAU', 'IG Bau', 'IGBAU', 'IG-BAU', 'IG Bauen-Agrar-Umwelt', 'IG Bauen Agrar Umwelt', 'Industriegewerkschaft Bauen-Agrar-Umwelt', 'Industriegewerkschaft Bauen Agrar Umwelt'],
       erklaerung: 'Die IG BAU (Industriegewerkschaft Bauen-Agrar-Umwelt) verhandelt mit den Arbeitgeberverbänden ZDB und HDB die Bau-Tarifverträge.' },
 
     { id: 'f-wiso-23', bereich: 'wiso', stufe: 2, typ: 'text',
       frage: 'Wie heißt der Träger der gesetzlichen Unfallversicherung für Bauunternehmen allgemein?',
-      antworten: ['Berufsgenossenschaft', 'BG', 'BG BAU', 'BG Bau', 'Berufsgenossenschaften'],
+      antworten: ['Berufsgenossenschaft', 'BG', 'BG BAU', 'BG Bau', 'BG-BAU', 'BGBAU', 'Berufsgenossenschaften', 'Berufsgenossenschaft Bau', 'Berufsgenossenschaft der Bauwirtschaft'],
       erklaerung: 'Träger der gesetzlichen Unfallversicherung sind die Berufsgenossenschaften; für die Bauwirtschaft ist es die BG BAU.' },
 
     { id: 'f-wiso-24', bereich: 'wiso', stufe: 2, typ: 'zahl',

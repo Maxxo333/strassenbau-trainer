@@ -87,7 +87,8 @@
   var STUFEN = { 1: 'leicht', 2: 'mittel', 3: 'schwer' };
   function normText(t) {
     return String(t || '').toLowerCase().trim().replace(/\s+/g, ' ')
-      .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').replace(/[.!]$/, '');
+      .replace(/ä/g, 'ae').replace(/ö/g, 'oe').replace(/ü/g, 'ue').replace(/ß/g, 'ss').replace(/[.!]$/, '')
+      .replace(/[\s\-–]/g, ''); // „IG BAU“ = „IG-BAU“ = „igbau“
   }
 
   function aktiveBereiche() {

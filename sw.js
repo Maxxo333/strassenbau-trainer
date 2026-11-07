@@ -1,5 +1,5 @@
 /* Straßenbau-Trainer – Service Worker (offline). Bei Änderungen Versionsnummer erhöhen. */
-var CACHE = 'strassenbau-trainer-v2';
+var CACHE = 'strassenbau-trainer-v3';
 var DATEIEN = ['./', './index.html', './styles.css', './inhalte.js', './inhalte-wiso.js', './inhalte-ergaenzung.js', './rechnen.js', './app.js', './manifest.webmanifest', './icon.svg'];
 
 self.addEventListener('install', function (e) {
