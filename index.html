@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Straßenbau-Trainer</title>
+  <meta name="description" content="Prüfungsvorbereitung für die Zwischenprüfung Straßenbauer/in – Lernkarten, Quiz, Fachrechnen und Prüfungssimulation, offline nutzbar.">
+  <meta name="theme-color" content="#B4460C">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="sprunglink" href="#app">Zum Inhalt springen</a>
+  <header class="kopf">
+    <a class="marke" href="#/start" aria-label="Straßenbau-Trainer, zur Übersicht">
+      <svg class="marke-logo" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#B4460C"/><path d="M14 50 L26 14 H38 L50 50 Z" fill="#fff"/><path d="M30.5 20h3v6h-3zM30 31h4v7h-4zM29.5 42h5v8h-5z" fill="#B4460C"/></svg>
+      <span><b>Straßenbau-Trainer</b><small>Zwischenprüfung Straßenbauer/in</small></span>
+    </a>
+    <div class="countdown" id="countdown" aria-live="polite"></div>
+  </header>
+  <div class="layout">
+    <nav class="navi" aria-label="Hauptnavigation"><ul id="navliste"></ul></nav>
+    <main id="app" tabindex="-1"></main>
+  </div>
+  <div id="ansage" class="versteckt" aria-live="polite"></div>
+  <noscript><p style="padding:1rem">Bitte JavaScript aktivieren, um die App zu nutzen.</p></noscript>
+  <script src="inhalte.js"></script>
+  <script src="inhalte-wiso.js"></script>
+  <script src="inhalte-ergaenzung.js"></script>
+  <script src="rechnen.js"></script>
+  <script src="app.js"></script>
+  <script>
+    if ('serviceWorker' in navigator && /^https?:$/.test(location.protocol)) {
+      navigator.serviceWorker.register('sw.js').catch(function () {});
+    }
+  </script>
+</body>
+</html>
